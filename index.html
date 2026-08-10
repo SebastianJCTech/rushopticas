@@ -1,172 +1,333 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="ROSH Ópticas en Guatemala. Salud visual, estilo, lentes graduados, lentes de sol con graduación, lentes de contacto y citas por WhatsApp." />
-  <title>ROSH Ópticas | Salud y estilo en un mismo lugar</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Rosh Ópticas - lentes, exámenes visuales, jornadas empresariales y asesoría personalizada.">
+  <title>Rosh Ópticas</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="header" id="top">
-    <a class="logo" href="#inicio" aria-label="Ir al inicio">
-      <img src="LOGO.PNG" alt="ROSH Ópticas" />
+
+  <div class="topbar">
+    <div>👁️ Cuidamos tu visión</div>
+    <div>Asesoría personalizada · Guatemala</div>
+  </div>
+
+  <header class="header">
+    <a href="#inicio" class="brand">
+      <img src="logo-rosh.png" alt="Rosh Ópticas">
     </a>
 
-    <nav class="nav" id="nav" aria-label="Navegación principal">
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">☰</button>
+
+    <nav class="nav" id="nav">
       <a href="#inicio">Inicio</a>
-      <a href="#promocion">Promoción</a>
+      <a href="#catalogo">Aros</a>
       <a href="#servicios">Servicios</a>
-      <a href="#nosotros">Nosotros</a>
+      <a href="#jornadas">Jornadas</a>
+      <a href="#promociones">Promociones</a>
       <a href="#contacto">Contacto</a>
     </nav>
 
-    <a class="header-cta" href="https://wa.me/50237981922?text=Hola%20ROSH%20%C3%93pticas%2C%20quiero%20agendar%20mi%20cita" target="_blank" rel="noopener">Agendar cita</a>
-    <button class="menu-btn" id="menuBtn" type="button" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    <a class="header-whatsapp wa-general" href="#" target="_blank" rel="noopener">
+      WhatsApp
+    </a>
   </header>
 
   <main>
     <section class="hero" id="inicio">
-      <div class="hero-copy">
-        <span class="eyebrow">ROSH Ópticas</span>
-        <h1>Salud y estilo en un mismo lugar</h1>
-        <p>Cuida tu mirada con atención personalizada, tecnología óptica y monturas modernas para cada estilo.</p>
-        <div class="hero-actions">
-          <a class="btn primary" href="https://wa.me/50237981922?text=Hola%20ROSH%20%C3%93pticas%2C%20quiero%20reservar%20mi%20cita" target="_blank" rel="noopener">Reservar por WhatsApp</a>
-          <a class="btn ghost" href="#servicios">Ver servicios</a>
-        </div>
-      </div>
+      <div class="carousel" id="heroCarousel">
 
-      <div class="hero-media">
-        <img src="slyder.png" alt="Interior de ROSH Ópticas con exhibición de lentes" />
-        <div class="hero-card">
-          <strong>Citas y asesoría visual</strong>
-          <span>Montúfar Zona 9 · Plaza San Rafael Zona 18</span>
-        </div>
-      </div>
-    </section>
-
-    <section class="promo-strip" id="promocion">
-      <div class="promo-copy">
-        <span class="section-kicker">Promoción vigente</span>
-        <h2>Lentes graduados desde Q749.00</h2>
-        <p>Una opción práctica para renovar tus lentes con acompañamiento profesional. Incluye aros sujetos a disponibilidad y lentes monofocales graduados.</p>
-        <div class="promo-highlights">
-          <span>Aro gratis</span>
-          <span>Lentes monofocales</span>
-          <span>Asesoría personalizada</span>
-        </div>
-        <a class="btn primary" href="https://wa.me/50237981922?text=Hola%2C%20quiero%20informaci%C3%B3n%20de%20la%20promoci%C3%B3n%20Q749" target="_blank" rel="noopener">Consultar disponibilidad</a>
-      </div>
-      <div class="promo-media">
-        <img src="promo-graduaciones.png" alt="Promoción de lentes graduados ROSH Ópticas" />
-      </div>
-    </section>
-
-    <section class="services" id="servicios">
-      <div class="section-heading">
-        <span class="section-kicker">Catálogo de lentes</span>
-        <h2>Soluciones para cada mirada</h2>
-        <p>Desde diseños clásicos hasta tendencias contemporáneas, cada par se adapta a tu necesidad visual y a tu estilo.</p>
-        <a class="btn catalog-btn" href="catalogo-rosh-opticas-2026.pdf" target="_blank" rel="noopener">Ver catálogo PDF</a>
-      </div>
-
-      <div class="service-grid">
-        <article class="service-card">
-          <span class="service-icon">◉</span>
-          <h3>Lentes ópticos</h3>
-          <p>Claridad visual con diseño elegante, monturas de alta calidad y graduación según tu receta.</p>
-        </article>
-        <article class="service-card">
-          <span class="service-icon">☀</span>
-          <h3>Sol con graduación</h3>
-          <p>Protección y estilo en cada mirada, con opciones modernas para diferentes rostros y ocasiones.</p>
-        </article>
-        <article class="service-card">
-          <span class="service-icon">◎</span>
-          <h3>Lentes de contacto</h3>
-          <p>Comodidad, libertad visual y opciones para corrección o cambio de color de ojos.</p>
-        </article>
-        <article class="service-card">
-          <span class="service-icon">⌁</span>
-          <h3>Línea para niños</h3>
-          <p>Monturas cómodas y resistentes para acompañar la salud visual de los más pequeños.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="about" id="nosotros">
-      <div class="about-text">
-        <span class="section-kicker">Sobre nosotros</span>
-        <h2>Tu visión es nuestra inspiración</h2>
-        <p>En ROSH Ópticas transformamos la visión en confianza, estilo y bienestar. Somos un espacio dedicado a cuidar tu mirada con excelencia, calidez y atención personalizada.</p>
-        <p>Combinamos tecnología de vanguardia con recomendaciones pensadas para tu vida diaria, porque cada mirada tiene una historia única.</p>
-      </div>
-
-      <div class="trust-panel">
-        <h3>Servicios de salud visual</h3>
-        <ul>
-          <li>Examen visual con precisión clínica.</li>
-          <li>Autorrefractómetro computarizado.</li>
-          <li>Retinoscopio, foróptero y lensómetro digital.</li>
-          <li>Asesoría cercana para elegir montura y lente.</li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="gallery" aria-label="Citas ROSH Ópticas">
-      <div class="gallery-card">
-        <img src="mascota-rosh.png" alt="Mascota de ROSH Ópticas" />
-      </div>
-      <div class="gallery-info">
-        <span class="section-kicker">Haz tu cita</span>
-        <h2>Ver bien es solo el comienzo</h2>
-        <p>Agenda por WhatsApp y recibe orientación para escoger la mejor opción según tu receta, estilo y presupuesto.</p>
-        <div class="mascot-row">
-          <img src="promo-graduaciones.png" alt="Lentes de clip disponibles en ROSH Ópticas" />
-          <div>
-            <strong>Lentes de clip disponibles</strong>
-            <span>Pregunta por opciones compatibles con tu graduación y montura.</span>
+        <article class="slide active">
+          <img src="hero-progresivos.jpeg" alt="Progresivos Premium Rosh Ópticas">
+          <div class="slide-overlay"></div>
+          <div class="slide-copy">
+            <span class="eyebrow">Rosh Ópticas</span>
+            <h1>Visión que se adapta a tu estilo de vida</h1>
+            <p>Conoce nuestras opciones en lentes progresivos y soluciones visuales premium.</p>
+            <a href="#catalogo" class="btn btn-primary">Ver opciones</a>
           </div>
+        </article>
+
+        <article class="slide">
+          <img src="hero-transitions.jpeg" alt="Lentes Transitions Rosh Ópticas">
+          <div class="slide-overlay"></div>
+          <div class="slide-copy">
+            <span class="eyebrow">Tecnología visual</span>
+            <h2>Un lente para interiores y exteriores</h2>
+            <p>Pregunta por nuestras opciones Transitions y encuentra el tono ideal para ti.</p>
+            <a href="#" class="btn btn-primary wa-transitions" target="_blank" rel="noopener">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+
+        <article class="slide">
+          <img src="hero-tenidos.jpeg" alt="Lentes teñidos Rosh Ópticas">
+          <div class="slide-overlay"></div>
+          <div class="slide-copy">
+            <span class="eyebrow">Color + protección</span>
+            <h2>Lentes teñidos para expresar tu estilo</h2>
+            <p>Pregunta por colores y disponibilidad.</p>
+            <a href="#" class="btn btn-primary wa-tenidos" target="_blank" rel="noopener">Más información</a>
+          </div>
+        </article>
+
+        <button class="carousel-btn prev" id="prevSlide" aria-label="Anterior">‹</button>
+        <button class="carousel-btn next" id="nextSlide" aria-label="Siguiente">›</button>
+
+        <div class="carousel-dots" id="carouselDots">
+          <button class="dot active" aria-label="Slide 1"></button>
+          <button class="dot" aria-label="Slide 2"></button>
+          <button class="dot" aria-label="Slide 3"></button>
         </div>
       </div>
     </section>
 
-    <section class="contact" id="contacto">
+    <section class="benefits">
+      <div class="benefit"><span>👓</span><div><strong>Aros para todos</strong><small>Estilos modernos y clásicos</small></div></div>
+      <div class="benefit"><span>👁️</span><div><strong>Exámenes visuales</strong><small>Consulta disponibilidad</small></div></div>
+      <div class="benefit"><span>🏢</span><div><strong>Jornadas empresariales</strong><small>Llevamos la atención a tu empresa</small></div></div>
+      <div class="benefit"><span>💬</span><div><strong>Compra por WhatsApp</strong><small>Consulta el modelo que te guste</small></div></div>
+    </section>
+
+    <section class="quick-sections" id="servicios">
+      <a href="#catalogo" class="quick-card">
+        <img src="producto-sm1961.jpeg" alt="Aros para mujer">
+        <div class="quick-label">Aros y monturas</div>
+      </a>
+
+      <a href="#examenes" class="quick-card">
+        <img src="examenes.jpeg" alt="Exámenes visuales">
+        <div class="quick-label">Exámenes visuales</div>
+      </a>
+
+      <a href="#jornadas" class="quick-card">
+        <img src="jornadas.jpeg" alt="Jornadas empresariales">
+        <div class="quick-label">Jornadas empresariales</div>
+      </a>
+
+      <a href="#promociones" class="quick-card">
+        <img src="promo-749.jpeg" alt="Promociones Rosh Ópticas">
+        <div class="quick-label">Promociones</div>
+      </a>
+    </section>
+
+    <section class="section catalog" id="catalogo">
+      <div class="section-heading">
+        <div>
+          <span class="section-kicker">Catálogo seleccionado</span>
+          <h2>Encuentra un aro para ti</h2>
+          <p>Una muestra de nuestros modelos. Consulta existencia y precio directamente por WhatsApp.</p>
+        </div>
+        <a href="#" class="text-link wa-catalogo" target="_blank" rel="noopener">Consultar más modelos →</a>
+      </div>
+
+      <div class="product-grid">
+        <article class="product-card" data-model="SENMA SM2128">
+          <div class="product-image"><img src="producto-sm2128.jpeg" alt="Aro SENMA SM2128"></div>
+          <div class="product-info">
+            <span class="tag">SENMA</span>
+            <h3>Modelo SM2128</h3>
+            <p>Aro metálico de estilo elegante.</p>
+            <button class="product-wa">Consultar por WhatsApp</button>
+          </div>
+        </article>
+
+        <article class="product-card" data-model="SENMA SM1441">
+          <div class="product-image"><img src="producto-sm1441-sm1318.jpeg" alt="Aro SENMA SM1441"></div>
+          <div class="product-info">
+            <span class="tag">SENMA</span>
+            <h3>Modelo SM1441</h3>
+            <p>Diseño ligero y moderno.</p>
+            <button class="product-wa">Consultar por WhatsApp</button>
+          </div>
+        </article>
+
+        <article class="product-card" data-model="SENMA SM1806">
+          <div class="product-image"><img src="producto-sm1806.jpeg" alt="Aro SENMA SM1806"></div>
+          <div class="product-info">
+            <span class="tag">SENMA</span>
+            <h3>Modelo SM1806</h3>
+            <p>Montura amplia con acabado oscuro.</p>
+            <button class="product-wa">Consultar por WhatsApp</button>
+          </div>
+        </article>
+
+        <article class="product-card" data-model="SENMA SM1961">
+          <div class="product-image"><img src="producto-sm1961.jpeg" alt="Aro SENMA SM1961"></div>
+          <div class="product-info">
+            <span class="tag">SENMA</span>
+            <h3>Modelo SM1961</h3>
+            <p>Diseño femenino en tono rosa.</p>
+            <button class="product-wa">Consultar por WhatsApp</button>
+          </div>
+        </article>
+
+        <article class="product-card" data-model="SENMA SM1531">
+          <div class="product-image"><img src="producto-sm1531.jpeg" alt="Aro SENMA SM1531"></div>
+          <div class="product-info">
+            <span class="tag">SENMA</span>
+            <h3>Modelo SM1531</h3>
+            <p>Estilo rectangular clásico.</p>
+            <button class="product-wa">Consultar por WhatsApp</button>
+          </div>
+        </article>
+
+        <article class="product-card" data-model="SENMA SM2252">
+          <div class="product-image"><img src="producto-sm2252.jpeg" alt="Aro SENMA SM2252"></div>
+          <div class="product-info">
+            <span class="tag">SENMA</span>
+            <h3>Modelo SM2252</h3>
+            <p>Montura negra de uso diario.</p>
+            <button class="product-wa">Consultar por WhatsApp</button>
+          </div>
+        </article>
+
+        <article class="product-card" data-model="@ver AR602">
+          <div class="product-image"><img src="producto-ar602.jpeg" alt="Aro AR602"></div>
+          <div class="product-info">
+            <span class="tag">@ver</span>
+            <h3>Modelo AR602</h3>
+            <p>Diseño circular minimalista.</p>
+            <button class="product-wa">Consultar por WhatsApp</button>
+          </div>
+        </article>
+
+        <article class="product-card" data-model="1004 SUN">
+          <div class="product-image"><img src="producto-1004-sun.jpeg" alt="Aro 1004 SUN"></div>
+          <div class="product-info">
+            <span class="tag">Selección Rosh</span>
+            <h3>Modelo 1004 SUN</h3>
+            <p>Montura metálica estilo aviador.</p>
+            <button class="product-wa">Consultar por WhatsApp</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="feature-banner" id="examenes">
+      <div class="feature-image">
+        <img src="examenes.jpeg" alt="Exámenes visuales Rosh Ópticas">
+      </div>
+      <div class="feature-copy">
+        <span class="section-kicker">Salud visual</span>
+        <h2>Exámenes visuales</h2>
+        <p>Consulta horarios disponibles y recibe información directamente por WhatsApp.</p>
+        <a href="#" class="btn btn-primary wa-examen" target="_blank" rel="noopener">Consultar examen visual</a>
+      </div>
+    </section>
+
+    <section class="feature-banner reverse" id="jornadas">
+      <div class="feature-image">
+        <img src="jornadas.jpeg" alt="Jornadas empresariales Rosh Ópticas">
+      </div>
+      <div class="feature-copy">
+        <span class="section-kicker">Servicio empresarial</span>
+        <h2>Jornadas empresariales</h2>
+        <p>Lleva servicios de salud visual a tu empresa. Solicita información para conocer opciones, disponibilidad y coordinación.</p>
+        <a href="#" class="btn btn-primary wa-jornadas" target="_blank" rel="noopener">Solicitar información</a>
+      </div>
+    </section>
+
+    <section class="promos section" id="promociones">
+      <div class="section-heading">
+        <div>
+          <span class="section-kicker">Promociones y tecnología</span>
+          <h2>Más opciones para tu visión</h2>
+        </div>
+      </div>
+
+      <div class="promo-grid">
+        <article class="promo-card">
+          <img src="promo-749.jpeg" alt="Promoción graduaciones monofocales">
+          <div class="promo-copy">
+            <h3>Promociones vigentes</h3>
+            <p>Consulta condiciones y disponibilidad.</p>
+            <a href="#" class="promo-wa" data-topic="la promoción de graduaciones monofocales" target="_blank" rel="noopener">Consultar promoción</a>
+          </div>
+        </article>
+
+        <article class="promo-card">
+          <img src="contactos-acuvue.jpeg" alt="Lentes de contacto Acuvue">
+          <div class="promo-copy">
+            <h3>Lentes de contacto</h3>
+            <p>Pregunta por opciones y disponibilidad.</p>
+            <a href="#" class="promo-wa" data-topic="lentes de contacto" target="_blank" rel="noopener">Consultar disponibilidad</a>
+          </div>
+        </article>
+
+        <article class="promo-card">
+          <img src="hero-transitions.jpeg" alt="Transitions Gen S">
+          <div class="promo-copy">
+            <h3>Transitions</h3>
+            <p>Tecnología que se adapta a diferentes condiciones de luz.</p>
+            <a href="#" class="promo-wa" data-topic="lentes Transitions" target="_blank" rel="noopener">Solicitar información</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="stores section" id="ubicaciones">
+      <div class="section-heading stores-heading">
+        <div>
+          <span class="section-kicker">Nuestras ubicaciones</span>
+          <h2>Visita nuestras tiendas</h2>
+          <p>Consulta el mapa de cada sucursal y encuentra la ruta que te resulte más conveniente.</p>
+        </div>
+      </div>
+
+      <div class="stores-grid">
+        <article class="store-card">
+          <div class="store-info">
+            <span class="store-number">01</span>
+            <div>
+              <h3>Tienda 1</h3>
+              <p>Agrega aquí el nombre o la dirección de la primera tienda.</p>
+            </div>
+          </div>
+          <div class="map-frame">
+            <!-- Reemplaza el valor de src con el enlace "Insertar un mapa" de la Tienda 1. -->
+            <iframe src="https://www.google.com/maps?q=Rosh%20Opticas&amp;output=embed" title="Mapa de la Tienda 1" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+          </div>
+        </article>
+
+        <article class="store-card">
+          <div class="store-info">
+            <span class="store-number">02</span>
+            <div>
+              <h3>Tienda 2</h3>
+              <p>Agrega aquí el nombre o la dirección de la segunda tienda.</p>
+            </div>
+          </div>
+          <div class="map-frame">
+            <!-- Reemplaza el valor de src con el enlace "Insertar un mapa" de la Tienda 2. -->
+            <iframe src="https://www.google.com/maps?q=Rosh%20Opticas&amp;output=embed" title="Mapa de la Tienda 2" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contacto">
       <div>
-        <span class="section-kicker">Contacto y citas</span>
-        <h2>Agenda tu visita en ROSH Ópticas</h2>
-        <p>Será un placer recibirte y que formes parte de nuestra familia visual, donde cada mirada cuenta y cada estilo se celebra.</p>
+        <span class="section-kicker light">Rosh Ópticas</span>
+        <h2>¿Viste un modelo que te gustó?</h2>
+        <p>Escríbenos por WhatsApp y con gusto te ayudamos con existencia, precio y opciones de graduación.</p>
       </div>
-      <div class="contact-panel">
-        <a href="https://wa.me/50237981922?text=Hola%20ROSH%20%C3%93pticas%2C%20quiero%20agendar%20mi%20cita" target="_blank" rel="noopener">
-          <span>WhatsApp</span>
-          <strong>3798-1922</strong>
-        </a>
-        <a href="tel:+50223392157">
-          <span>Teléfono</span>
-          <strong>2339-2157</strong>
-        </a>
-        <a href="https://facebook.com/roshopticas" target="_blank" rel="noopener">
-          <span>Facebook</span>
-          <strong>@roshopticas</strong>
-        </a>
-      </div>
-      <div class="locations">
-        <article>
-          <h3>Centro Comercial Montúfar</h3>
-          <p>Zona 9, local #57</p>
-        </article>
-        <article>
-          <h3>Centro Comercial Plaza San Rafael</h3>
-          <p>Zona 18, local #53</p>
-        </article>
-      </div>
+      <a href="#" class="btn btn-light wa-general" target="_blank" rel="noopener">Hablar por WhatsApp</a>
     </section>
   </main>
 
-  <footer>
-    <p>© 2026 ROSH Ópticas | Desarrollado por JCtech</p>
+  <a href="#" class="floating-wa wa-general" aria-label="WhatsApp" target="_blank" rel="noopener">💬</a>
+
+  <footer class="footer">
+    <div>
+      <strong>Rosh Ópticas</strong>
+      <p>Tu visión, nuestro compromiso.</p>
+    </div>
+    <div>
+      <p>© 2026 Rosh Ópticas</p>
+      <p class="developed">Desarrollado por JCtech</p>
+    </div>
   </footer>
 
   <script src="script.js"></script>
