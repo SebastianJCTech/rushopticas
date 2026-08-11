@@ -40,12 +40,20 @@ document.querySelectorAll(".wa-general").forEach(a => {
   a.href = waLink("Hola Rosh Ópticas, vi su página web y me gustaría recibir información sobre sus productos y servicios.");
 });
 
+document.querySelectorAll(".wa-promo-749").forEach(a => {
+  a.href = waLink("Hola Rosh Ópticas, vi su promoción Todas las graduaciones Q749 y me gustaría conocer las condiciones y disponibilidad.");
+});
+
 document.querySelectorAll(".wa-transitions").forEach(a => {
   a.href = waLink("Hola Rosh Ópticas, vi en su página los lentes Transitions y me gustaría recibir más información y conocer disponibilidad.");
 });
 
 document.querySelectorAll(".wa-tenidos").forEach(a => {
   a.href = waLink("Hola Rosh Ópticas, vi en su página los lentes teñidos y me gustaría conocer colores, opciones y disponibilidad.");
+});
+
+document.querySelectorAll(".wa-referidos").forEach(a => {
+  a.href = waLink("Hola Rosh Ópticas, ya compré con ustedes y me gustaría conocer cómo participar en el Programa de Referidos.");
 });
 
 document.querySelectorAll(".wa-catalogo").forEach(a => {
