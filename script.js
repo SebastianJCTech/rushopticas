@@ -49,7 +49,7 @@ document.querySelectorAll(".wa-transitions").forEach(a => {
 });
 
 document.querySelectorAll(".wa-tenidos").forEach(a => {
-  a.href = waLink("Hola Rosh Ópticas, vi en su página los lentes teñidos y me gustaría conocer colores, opciones y disponibilidad.");
+  a.href = waLink("Hola Rosh Ópticas, vi Rosh Color’s en su página y me gustaría conocer colores, opciones y disponibilidad.");
 });
 
 document.querySelectorAll(".wa-referidos").forEach(a => {
