@@ -17,6 +17,50 @@ img{display:block;max-width:100%}
 a{text-decoration:none;color:inherit}
 button{font:inherit}
 
+
+.footer-social {
+  text-align: center;
+}
+
+.footer-social h3 {
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.social-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.social-icons img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+.social-icons a:hover {
+  transform: translateY(-4px);
+}
+
+@media (max-width: 620px) {
+  .footer-social {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+
 .topbar{
   min-height:34px;background:#16202b;color:#fff;
   display:flex;align-items:center;justify-content:space-between;
